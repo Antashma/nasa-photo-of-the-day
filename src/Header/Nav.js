@@ -5,7 +5,7 @@ const navItems = [
     {text: 'NASA Website',
     link: 'https://www.nasa.gov'},
     {text: 'Home',
-    link: '#'},
+    link: 'http://localhost:3000/'},
     {text: 'Yesterday\'s Photo',
     link:'#'}
 ]

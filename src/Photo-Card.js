@@ -1,0 +1,16 @@
+import React from "react";
+
+
+export const PhotoCard = props => {
+    const {photoTitle, photoDate, photoURL, photoCopy, photoDesc} = props;
+
+    return (
+        <div>
+            <h2>{photoTitle}</h2>
+            <img alt='NASA photo of the day' src= {photoURL} />
+            <p>&copy; {photoCopy}</p>
+            <p>{photoDesc}</p>
+            
+        </div>
+    )
+}
