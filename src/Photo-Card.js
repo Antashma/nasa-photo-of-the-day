@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export const PhotoCard = props => {
+const PhotoCard = props => {
     const {photoTitle, photoDate, photoURL, photoCopy, photoDesc} = props;
 
     return (
@@ -15,3 +15,5 @@ export const PhotoCard = props => {
         </div>
     )
 }
+
+export default PhotoCard
