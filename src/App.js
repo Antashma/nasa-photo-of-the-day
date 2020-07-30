@@ -8,7 +8,7 @@ function App() {
   const [nasaData, setNasaData] = useState({})
   useEffect(( ) => {
     axios
-      .get('https://api.nasa.gov/planetary/apod?date=2020-07-04&api_key=FljG5ofq0UasubX3hd8YX0TTZh1UWnezZdALhfjc')
+      .get('https://api.nasa.gov/planetary/apod?date&api_key=FljG5ofq0UasubX3hd8YX0TTZh1UWnezZdALhfjc')
       .then((success) => {
         console.log('Mission Successful 🚀', success); 
         setNasaData(success.data) 
