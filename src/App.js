@@ -3,6 +3,8 @@ import axios from 'axios';
 import "./App.css";
 import Header from './Header/Header'
 import PhotoCard from './Photo-Card'
+import Footer from './Footer'
+
 
 
 function App() {
@@ -35,9 +37,8 @@ function App() {
         photoTitle = {nasaData.title} 
         photoURL = {nasaData.url} 
         photoDesc = {nasaData.explanation}
-        photoCopy = {nasaData.copyright}
       />
-      {/* <Footer /> */}
+       <Footer photoCopy = {nasaData.copyright} />
     </div>
 );
 }
