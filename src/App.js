@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect } from "react";
 import "./App.css";
-
+import {Header} from './Header/Header'
 
 function App() {
   useEffect(( ) => {
@@ -16,7 +16,10 @@ function App() {
   }, [])
   return (
     <div className="App">
-
+      <Header />
+      {/* 
+      <Photo-Card />
+      <Footer /> */}
     </div>
   );
 }
