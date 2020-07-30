@@ -1,13 +1,22 @@
-import React from "react";
+import axios from 'axios';
+import React, { useEffect } from "react";
 import "./App.css";
 
+
 function App() {
+  useEffect(( ) => {
+    axios
+      .get('https://api.nasa.gov/planetary/apod?date=2020-07-04&api_key=FljG5ofq0UasubX3hd8YX0TTZh1UWnezZdALhfjc')
+      .then((success) => {
+        console.log('Mission Successful 🚀', success)
+      })
+      .catch((failure) =>{
+        console.log('Mission Failed 👾', failure)
+      })
+  }, [])
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+
     </div>
   );
 }
