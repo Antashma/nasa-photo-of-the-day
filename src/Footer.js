@@ -2,9 +2,11 @@ import React from 'react'
 
 
 const Footer = props => {
-    const { photoCopy } = props
+    const { copyInfo } = props
     return (
-        <p>Photo &copy; {photoCopy}</p>
+        <footer>
+        <p>Photo &copy; {copyInfo}</p>
+        </footer>
     )
 
 }
