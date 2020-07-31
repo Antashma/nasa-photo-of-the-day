@@ -9,7 +9,7 @@ const PhotoCard = props => {
         <div>
             <h3>{photoDate}</h3>
             <h2>{photoTitle}</h2>
-            <img alt='NASA photo of the day' src= {photoURL} />
+            <img alt={photoTitle} src= {photoURL} />
             <p>{photoDesc}</p> 
             <Footer copyInfo = {photoCopy} />        
         </div>

@@ -3,12 +3,17 @@ import axios from 'axios';
 import "./App.css";
 import Header from './Header/Header'
 import PhotoCard from './Photo-Card'
-
+import styled from 'styled-components'
 
 
 function App() {
   const [photoDate, setPhotoDate] = useState('&date=2020-07-30')
   const [nasaData, setNasaData] = useState({})
+
+  const AppBox = styled.div`
+    max-width: 1000px;
+    border: 2px solid lime;
+  `
 
   useEffect(( ) => {
     axios
@@ -24,12 +29,7 @@ function App() {
   }, [photoDate])
 
   return (
-    <div className="App">
-      {/* possible stretch item
-      
-      <button onClick={ () => 
-        setPhotoDate(`&date=${'2020-07-04'}`)} >
-        Change Date</button> */}
+    <AppBox className="App">
       <Header photoDate = {photoDate} setDate = {setPhotoDate}/>
       <PhotoCard 
         photoDate = {nasaData.date} 
@@ -38,7 +38,7 @@ function App() {
         photoDesc = {nasaData.explanation}
         photoCopy = {nasaData.copyright}
       />
-    </div>
+    </AppBox>
 );
 }
 
