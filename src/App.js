@@ -7,7 +7,7 @@ import PhotoCard from './Photo-Card'
 
 
 function App() {
-  const [photoDate, setPhotoDate] = useState('')
+  const [photoDate, setPhotoDate] = useState('&date=2020-07-30')
   const [nasaData, setNasaData] = useState({})
 
   useEffect(( ) => {
@@ -25,12 +25,12 @@ function App() {
 
   return (
     <div className="App">
+      {/* possible stretch item
+      
       <button onClick={ () => 
         setPhotoDate(`&date=${'2020-07-04'}`)} >
-        Change Date</button>
-
-      {console.log('photoDate value: ', photoDate, '/ nasaData value: ', photoDate)} 
-      <Header />
+        Change Date</button> */}
+      <Header photoDate = {photoDate} setDate = {setPhotoDate}/>
       <PhotoCard 
         photoDate = {nasaData.date} 
         photoTitle = {nasaData.title} 
