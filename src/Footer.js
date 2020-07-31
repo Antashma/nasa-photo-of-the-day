@@ -1,17 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const AppFooter = styled.footer`
-    background: dodgerblue;
-    margin: 0;
+const FooterCopy = styled.p`
+    font-weight: bold;
 `
 
 const Footer = props => {
     const { copyInfo } = props
     return (
-        <AppFooter>
-        <p>Photo &copy; {copyInfo}</p>
-        </AppFooter>
+        <footer>
+        <FooterCopy>Photo &copy; {copyInfo}</FooterCopy>
+        </footer>
     )
 
 }

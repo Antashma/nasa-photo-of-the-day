@@ -11,9 +11,9 @@ function App() {
   const [nasaData, setNasaData] = useState({})
 
   const AppBox = styled.div`
-    max-width: 1000px;
-    border: 2px solid lime;
-  `
+    
+      display:auto;
+]  `
 
   useEffect(( ) => {
     axios

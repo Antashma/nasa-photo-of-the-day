@@ -27,6 +27,7 @@ export const Nav = props => {
     `
 
     const AppNav = styled.nav`
+        min-width:800px;
         display:flex;
         justify-content: space-around
     `
